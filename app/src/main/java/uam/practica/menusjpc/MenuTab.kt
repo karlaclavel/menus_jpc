@@ -41,9 +41,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-/*
-*  TopAppBar con menu de tipo OverFlow
- */
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 //@Preview(showBackground = true, showSystemUi = true)
@@ -90,12 +87,9 @@ fun OverFlowTopAppBar() {
         }
 
     )
-
 }
 
-/*
-*  TabRow con tabs de movimiento
- */
+
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun TabRowTopBar() {
@@ -106,8 +100,8 @@ fun TabRowTopBar() {
         TabRow(
             selectedTabIndex = tabIndex,
             modifier = Modifier,
-            contentColor = Color(0xFF2B254B),
-            containerColor = Color(0xFFBDACEC),
+            contentColor = Color(0xFF20152C),
+            containerColor = Color(0xFFB8ACF0),
             indicator = { tabPositions ->
                 TabRowDefaults.apply {
                     Divider(
@@ -115,7 +109,7 @@ fun TabRowTopBar() {
                             .height(2.dp)
                             .padding(horizontal = 10.dp)
                             .tabIndicatorOffset(tabPositions[tabIndex]),
-                        color = Color(0xFF801392)
+                        color = Color(0xFFE91E63)
                     )
                 }
             },
@@ -134,7 +128,6 @@ fun TabRowTopBar() {
                                     verticalArrangement = Arrangement.Center
                                 ) {
                                     Icon(imageVector = Icons.Default.Home, contentDescription = null)
-                                    Text(text = "Home")
                                 }
                             1 ->
                                 Column (
@@ -143,7 +136,6 @@ fun TabRowTopBar() {
                                     verticalArrangement = Arrangement.Center
                                 ) {
                                     Icon(imageVector = Icons.Default.Person, contentDescription = null)
-                                    Text(text = "Cuenta")
                                 }
                             2 ->
                             Column (
@@ -152,7 +144,6 @@ fun TabRowTopBar() {
                                 verticalArrangement = Arrangement.Center
                             ) {
                                 Icon(imageVector = Icons.Default.Settings, contentDescription = null)
-                                Text(text = "Configuración")
                             }
                         }
                     }
@@ -160,11 +151,11 @@ fun TabRowTopBar() {
             }
         }
 
-        when (tabIndex) {
+       /* when (tabIndex) {
             0 -> HomeScreen()
             1 -> CuentaScreen()
             2 -> ConfiguracionScreen()
-        }
+        }*/
     }
 }
 
