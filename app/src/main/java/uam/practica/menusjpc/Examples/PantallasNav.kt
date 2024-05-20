@@ -1,4 +1,4 @@
-package uam.practica.menusjpc
+package uam.practica.menusjpc.Examples
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.*

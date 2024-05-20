@@ -1,4 +1,4 @@
-package uam.practica.menusjpc
+package uam.practica.menusjpc.Examples
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.clickable

@@ -1,4 +1,4 @@
-package uam.practica.menusjpc
+package uam.practica.menusjpc.Examples
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
